@@ -96,11 +96,16 @@
 // const message2 = `名前は${name}です。年齢は${age}です`;
 // console.log(message2);
 
-const myProfile = ["caz", 240];
+// const myProfile = ["caz", 240];
 
-const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}です。`;
-console.log(message3);
+// const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}です。`;
+// console.log(message3);
 
-const [name00, age01] = myProfile;
-const message4 = `名前は${name00}です。年齢は${age01}です。`;
-console.log(message4);
+// const [name00, age01] = myProfile;
+// const message4 = `名前は${name00}です。年齢は${age01}です。`;
+// console.log(message4);
+
+// 4-23　デフォルト値
+const sayHello = (name = "ゲスト") => console.log(`こんにちは、${name}さん!`);
+sayHello("caz");
+sayHello();
