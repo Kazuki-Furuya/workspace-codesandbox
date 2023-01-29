@@ -22,35 +22,42 @@
 // let val2 = "let変数";
 // console.log(val2);
 
-let val2 = "let変数を上書き";
-console.log(val2);
+// let val2 = "let変数を上書き";
+// console.log(val2);
 
-// 失敗例
-// let val2 = "let変数を再宣言"
+// // 失敗例
+// // let val2 = "let変数を再宣言"
 
-// constは上書きも再宣言も不可
-// constで定義したプロパティ、配列は追加、修正が可能
-const val3 = "const変数";
-console.log(val3);
+// // constは上書きも再宣言も不可
+// // constで定義したプロパティ、配列は追加、修正が可能
+// const val3 = "const変数";
+// console.log(val3);
 
-// 失敗例
-// val3 = "const変数を上書き"
-// const val3 = "const変数を再宣言";
+// // 失敗例
+// // val3 = "const変数を上書き"
+// // const val3 = "const変数を再宣言";
 
-const val4 = {
-  name: "kazu",
-  age: 24
-};
-console.log(val4);
+// const val4 = {
+//   name: "kazu",
+//   age: 24
+// };
+// console.log(val4);
 
-val4.name = "カズ";
-val4.addres = "Tokyo";
+// val4.name = "カズ";
+// val4.addres = "Tokyo";
 
-const val5 = ["dog", "cat"];
-console.log(val5);
+// const val5 = ["dog", "cat"];
+// console.log(val5);
 
-val5[0] = "bird";
-console.log(val5);
+// val5[0] = "bird";
+// console.log(val5);
 
-val5.push("monkey");
-console.log(val5);
+// val5.push("monkey");
+// console.log(val5);
+
+// 4-20 テンプレート文字列
+const name = "かず";
+const age = 24;
+// 私の名前はかずです。年齢は24歳です。
+const message2 = `私の名前は${name}です。年齢は${age}です。`;
+console.log(message2);
