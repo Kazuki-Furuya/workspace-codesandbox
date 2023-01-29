@@ -142,7 +142,7 @@
 // console.log(arr7);
 
 // 4-25　mapやfilterを使った配列の処理
-const nameArr = ["田中", "山田", "じゃけぇ"];
+// const nameArr = ["田中", "山田", "じゃけぇ"];
 // for (let index = 0; index < nameArr.length; index++) {
 //   console.log(`${index + 1}番目は${nameArr[index]}です`);
 // }
@@ -178,8 +178,29 @@ const nameArr = ["田中", "山田", "じゃけぇ"];
 // const formattedNum = typeof num === 'number' ? num.toLocaleString() : '数値を入力してください';
 // console.log(formattedNum);
 
-const checkSum = (num1, num2) => {
-  return num1 + num2 > 100 ? "100を超えています!!" : "許容範囲内です";
-};
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? "100を超えています!!" : "許容範囲内です";
+// };
 
-console.log(checkSum(-200, -300));
+// console.log(checkSum(-200, -300));
+
+// 4-27　論理演算子
+// const flag1 = true;
+// const flag2 = true;
+
+// if (flag1 || flag2) {
+//   console.log("1か2はtrueになります");
+// } else {
+//   console.log("1も2もfalseです");
+// }
+
+// if (flag1 && flag2) {
+//   console.log("1も2もtrueです");
+// }
+
+// ||は左側がfalseなら右側を返す
+// &&は左側がtrueなら右側を返す
+const num = 1;
+// const fee = num || "金額未設定です";
+const fee = num && "金額が設定されています";
+console.log(fee);
