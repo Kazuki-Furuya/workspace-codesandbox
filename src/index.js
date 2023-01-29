@@ -63,22 +63,44 @@
 // console.log(message2);
 
 // 4-21 アロー関数
-const func1 = function (str) {
-  return str;
-};
-console.log(func1("func1です"));
+// const func1 = function (str) {
+//   return str;
+// };
+// console.log(func1("func1です"));
 
-const func2 = (str) => {
-  return str;
-};
+// const func2 = (str) => {
+//   return str;
+// };
 // 引数が１つのみの場合、以下の形式で可能
 // const func2 = str => {
 //   return str;
 //of }
-console.log(func2("func2です"));
+// console.log(func2("func2です"));
 
-const func3 = (num1, num2) => {
-  return num1 + num2;
-};
-// const func3 (num1, num2) => num1 + num2;
-console.log(func3(2, 2));
+// const func3 = (num1, num2) => {
+//   return num1 + num2;
+// };
+// // const func3 (num1, num2) => num1 + num2;
+// console.log(func3(2, 2));
+
+// 4-21　分割代入
+// const myProfile = {
+//   name: "caz",
+//   age: 24
+// };
+
+// const message1 = `名前は${myProfile.name}です。年齢は${myProfile.age}です`;
+// console.log(message1);
+
+// const { name, age } = myProfile;
+// const message2 = `名前は${name}です。年齢は${age}です`;
+// console.log(message2);
+
+const myProfile = ["caz", 240];
+
+const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}です。`;
+console.log(message3);
+
+const [name00, age01] = myProfile;
+const message4 = `名前は${name00}です。年齢は${age01}です。`;
+console.log(message4);
